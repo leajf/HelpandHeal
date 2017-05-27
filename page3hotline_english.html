@@ -1,0 +1,370 @@
+<html>
+	<head>
+
+		<title>Help & Heal</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,700' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<link rel="shortcut icon" href="url.ico" type="image/x-icon" />
+
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					$(".head").click(function(e){
+				        e.preventDefault();
+				        $(this).closest("li").find(".content").slideToggle();
+				        $(".head").click(function(e){
+							e.preventDefault();
+			  				$(this).closest("li").find(".content").not(":animated").slideToggle();
+						});
+			        });
+			    });
+			</script>
+		
+
+		<style>
+			
+			body {
+				background-color:#550039;
+			}
+
+			a, a:link, a:visited, a:active {
+                color: #ffffff;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+            }
+
+			a:hover {
+	            cursor:pointer;
+	            cursor:hand;
+	            padding-bottom:5px;
+	            border-bottom: 1px solid #fff;
+        	}
+
+			ul {
+                list-style:none;
+                white-space:nowrap;
+                width:85%;
+            }
+
+            li {
+            	padding:0;
+            	margin:0;
+            }
+
+            h2 {
+			    color:#ffffff; /*Color: content subtitles*/
+			    font-family:'Raleway', sans-serif;
+			    font-size: 25px;
+			    font-weight: normal;
+			    padding: 5px 0px;
+			    margin: 0;
+			}
+
+            #logo {
+            	max-width:100px;
+            	position:fixed;
+            	top:15px;
+            	left:15px;
+            }
+
+            #title {
+				color:#ffffff;
+				background-color:none;
+				font-color:#ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-size: 50px;
+				position:absolute;
+				top:75px;
+				width:99%;
+				text-align:center;
+			}
+
+            #back {
+				font-size: 30px;
+            	font-color:#ffffff;
+            	color:#ffffff;
+            	background-color:none;
+				font-family: 'Raleway', sans-serif;
+				width:99%;
+				text-align: center;
+				margin-top:31%;
+				position:absolute;
+			}
+
+			#contentBox {
+    			margin:auto;
+    			top:0;
+    			left:0;
+    			right:0;
+    			bottom:0;
+    			width: 80%;
+    			text-align:left;
+    			padding-left:10%;
+    			padding-top:150px;
+			}
+
+			#contentBox .column {
+			    float:left;
+			    margin:0;
+			    width:50%;
+			}
+
+			.content {
+				color:#ffffff;
+				font-family:'Raleway', sans-serif;
+				font-size:18px;
+				padding:5px;
+			}
+
+			.content a, a:link, a:hover {
+				color:#ffffff;
+				border-bottom:solid, 1px, #ffffff;
+			}
+
+			#contentBox .head, li, h2 {
+			    margin-bottom:15px;
+			    }
+
+			#contentBox .head {
+			    display:inline;
+			    }
+
+			#contentBox .content {
+			    display:none;
+			    padding-left:10px;
+			    }
+
+			#contentBox  li {
+			    position:relative;
+			    overflow:hidden;
+			    padding: 0;
+			    margin: 0;
+			    }
+			   
+			#contentBox h2 {
+			    padding: 15px;
+			    margin: 0;
+			}
+			 
+			#contentBox h2 a {
+			    color: #ffffff; /*Color: faq questions*/
+			}
+			 
+			#contentBox h2 a:hover {
+				cursor:pointer;
+	            cursor:hand;
+	            padding-bottom:5px;
+	            border-bottom: 1px solid #fff;
+			}
+			
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="logo"><img src="logo.png"></img></div>
+		<div id="title">Hotlines</div>
+
+			<div id="contentBox">
+				<div class="column">
+					<ul>
+						<li>
+						    <h2><a class="head">Alcohol & Substance Abuse</a></h2>
+						    <div class="content" style="display:none">
+						      	The National Alcohol & Substance Abuse Info Center
+						      	<br>
+						      	1 (800) 784.6776 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+						    </div>
+					    </li> 
+
+					    <li>
+					    	<h2><a class="head">Cancer Resources & Information</a></h2>
+					        <div class="content" style="display:none">
+					        	American Cancer Society
+					        	<br>
+					        	1 (800) 227.2345  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					        </div>
+					    </li> 
+					   
+					    <li>
+					    	<h2><a class="head">Depression & Suicide Prevention</a></h2>
+					      	<div class="content" style="display:none">
+					      		National Hopeline Network
+					      		<br>
+					      		1 (800) 422.HOPE &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					      		<br>
+					      		Services also offered in English, French, and Creole
+
+					      		<br><br>
+
+					      		National Suicide Prevention Lifeline
+					      		<br>
+					      		1 (800) 273.8255 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					      		<br>
+					      		<a href="www.suicidepreventionlifeline.org/GetHelp/LifelineChat.aspx">Live chat</a> &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					      		<br><br>
+					      		I'm Alive
+					      		<br>
+					      		1 (800) 784.2433 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					      		<br>
+					      		<a href="www.imalive.org">Live chat</a> &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					         </div>
+					    </li> 
+
+					    <li>
+					      	<h2><a class="head">Domestic Violence & Dating Abuse</a></h2>
+					      	<div class="content" style="display:none">
+						    	National Domestic Violence Hotline
+						    	<br>
+								1 (800) 799.7233 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+								<br>
+								<a href="www.thehotline.org">Live chat</a> &nbsp;&nbsp;&nbsp;&nbsp; 7am-2am Central, every day
+
+								<br><br>
+
+								loveisrespect
+								<br>
+								1 (866) 331.9474 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+								<br>
+								<a href="www.loveisrespect.org">Live chat</a> &nbsp;&nbsp;&nbsp;&nbsp; 5pm-3am EST, every day
+
+								<br><br>
+
+								RAINN
+								<br>
+								1 (800) 656.4673 &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+								<br>
+								<a href="https://ohl.rainn.org/online">Live chat</a> &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+						    </div>
+					    </li> 
+					    
+					    <li>
+						    <h2><a class="head">Eating Disorders</a></h2>
+						    <div class="content" style="display:none">
+					        	National Association of Anorexia & Eating Disorders
+					        	<br>
+					        	1 (630) 577.1330 &nbsp;&nbsp;&nbsp;&nbsp; 10am-6pm EST, Mon-Fri
+
+					        	<br><br>
+
+					        	National Eating Disorders Association
+					        	<br>
+					        	1 (800) 931.2237 &nbsp;&nbsp;&nbsp;&nbsp; 9am-5-m EST, Mon-Fri
+					      	</div>
+					    </li>
+					</ul>
+				</div>
+
+				<div class="column"> 
+					<ul>
+
+					    <li>
+						    <h2><a class="head">HIV & AIDS</a></h2>
+						    <div class="content" style="display:none">
+					        	New York State HIV Counselling Hotline
+					        	<br>
+					        	1 (800) 872.2777 &nbsp;&nbsp;&nbsp;&nbsp; 2pm-8am EST, Mon-Fri 
+					        	<br>
+					        	 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;10am-6pm, EST Sat-Sun
+
+					        	 <br><br>
+
+					        	 National AIDS Hotline
+					        	 <br>
+					        	 1 (800) CDC.INFO  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					        	 <br><br>
+
+					        	 Gay Men's Health Crisis (GMHC)
+					        	 <br>
+					        	 1 (800) 243.7692  &nbsp;&nbsp;&nbsp;&nbsp; 10am-9pm EST, Mon-Fri
+					      	</div>
+					    </li>
+
+					    <li>
+						    <h2><a class="head">Homelessness & Runaway</a></h2>
+						    <div class="content" style="display:none">
+						    	National Runaway Safeline
+						    	<br>
+						    	1 (800) 786.2929  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+						    	<br>
+						    	<a href="www.1800runaway.org">Live chat</a>  &nbsp;&nbsp;&nbsp;&nbsp; 4.30pm-11.30pm CST, every day
+					      	</div>
+					    </li>
+
+					    <li>
+						    <h2><a class="head">LGBTQIAP+</a></h2>
+						    <div class="content" style="display:none">
+					        	The Trevor Project
+					        	<br>
+					        	1 (866) 488.7386  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					        	<br>
+					        	<a href="www.thetrevorproject.org/pages/get-help-now#tc">Live chat</a>  &nbsp;&nbsp;&nbsp;&nbsp; 3pm-9pm EST, every day
+
+					        	<br><br>
+
+					        	Trans Lifeline
+					        	<br>
+					        	1 (877) 565.8860  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					      	</div>
+					    </li>  
+
+					    <li>
+						    <h2><a class="head">Mental Health</a></h2>
+						    <div class="content" style="display:none">
+					        	National Mental Health Association
+					        	<br>
+					        	1 (800) 273.TALK  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					        	<br><br>
+
+					        	National Institute of Mental Health Info Center
+					        	<br>
+					        	1 (866) 615.6464  &nbsp;&nbsp;&nbsp;&nbsp; 8am-8pm EST, Mon-Fri
+					      	</div>
+					    </li> 
+
+					    <li>
+						    <h2><a class="head">Teen Pregnancy & Parenting</a></h2>
+						    <div class="content" style="display:none">
+					        	Baby Safe Haven
+					        	<br>
+					        	1 (888) 510.BABY  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					        	<br><br>
+
+					        	Birthright International
+					        	<br>
+					        	1 (800) 550.4900  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					        	<br><br>
+
+					        	American Pregnancy Helpline
+					        	<br>
+					        	1 (866) 942.6466  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+
+					        	<br><br>
+
+					        	Planned Parenthood
+					        	<br>
+					        	1 (800) 230.PLAN  &nbsp;&nbsp;&nbsp;&nbsp; 24 / 7
+					      	</div>
+					    </li>  
+			    	</ul>
+			   	</div>
+			</div>
+
+			<div id="back"><a href="page2english.html">BACK</div>
+
+
+	</body>
+</html>
