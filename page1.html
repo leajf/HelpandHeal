@@ -1,0 +1,130 @@
+<html>
+	<head>
+
+		<title>Help & Heal</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,700' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<link rel="shortcut icon" href="url.ico" type="image/x-icon" />
+			<script>
+
+				$(document).ready(function(){
+
+					/*transition between messages*/
+					(function() {
+					    var quotes = $(".maintitle");
+					    var quoteIndex = -1;
+					    function showNextQuote() {
+					        ++quoteIndex;
+					        quotes.eq(quoteIndex % quotes.length)
+					            .fadeIn(2000)
+					            .delay(2000)
+					            .fadeOut(2000, showNextQuote);
+					 	}
+					    showNextQuote();
+					})();
+				});
+			</script>
+
+		<style>
+			
+			body {
+				background-color:#550039;
+			}
+
+			a, a:link, a:visited, a:active {
+                color: #ffffff;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+            }
+
+			a:hover {
+	            cursor:pointer;
+	            cursor:hand;
+	            padding-bottom:5px;
+	            border-bottom: 1px solid #fff;
+        	}
+
+			ul {
+                list-style:none;
+                margin:0;
+                padding-left:0;
+                padding-right:0;
+                margin-top: -25px;
+                width:100%;
+                white-space:nowrap;
+                text-align:center;
+                font-color:#000;
+            }
+
+            ul > div {
+                display:inline-block;
+                white-space:normal;
+            }
+
+            #logo {
+            	max-width:100px;
+            	position:fixed;
+            	top:15px;
+            	left:15px;
+            }
+
+			.maintitle {
+				display: none;
+            	color:#ffffff;
+				background-color:none;
+				font-family: 'Raleway', sans-serif;
+				font-size: 50px;
+				position:absolute;
+				top:150px;
+				width:99%;
+				text-align:center;
+            }
+
+			#languageoption {
+				color:#ffffff;
+				background-color:none;
+				font-color:#ffffff;
+				font-family: 'Raleway', sans-serif;
+				font-size: 40px;
+				margin: auto;
+                top: 0;
+                right:0;
+                bottom: 0;
+                left:0;
+			}
+
+			#englishoption {
+				margin-right:10%;
+				margin-top:25%;
+			}
+
+			#spanishoption {
+				margin-left:10%;
+			}
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="logo"><img src="logo.png"></img></div>
+		<div id="titlehider" style:"display:none"></div>
+
+		<div class="maintitle">Welcome to Help & Heal!</div>
+		<div class="maintitle">&iexcl;Bienvenido a Help & Heal!</div>
+
+		<div id="languageoption">
+			<ul>
+			<div id="englishoption"><a href="page2english.html">English</a></div>
+			<div id="spanishoption"><a href="page2spanish.html">Espa&ntilde;ol</a></div>
+			</ul>
+		</div>
+	</body>
+</html>
